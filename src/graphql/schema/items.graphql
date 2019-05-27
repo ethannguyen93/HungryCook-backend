@@ -1,0 +1,11 @@
+# import Quantity, QuantityInput from './quantity.graphql'
+type Item {
+  _id: ID!
+  name: String!
+  quantity: Quantity
+}
+
+input ItemInput {
+  name: String!
+  quantity: QuantityInput
+}

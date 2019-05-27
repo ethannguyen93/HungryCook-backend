@@ -1,0 +1,18 @@
+# import ItemInput, Item from './schema/items.graphql'
+# import UserInput, User, AuthData from './schema/users.graphql'
+
+type RootQuery {
+  items: [Item!]!
+  users: [User!]!
+  login(email: String!, password: String!): AuthData!
+}
+
+type RootMutation {
+  createUser(userInput: UserInput): User
+  createItem(itemInput: ItemInput): Item
+}
+
+schema {
+  query: RootQuery
+  mutation: RootMutation
+}

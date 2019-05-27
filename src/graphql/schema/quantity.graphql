@@ -1,0 +1,9 @@
+type Quantity {
+  value: Int!,
+  metric: String!
+}
+
+input QuantityInput {
+  value: Int!
+  metric: String!
+}
